@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
+        integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/74fc1e9d11.js" crossorigin="anonymous"></script>
+    <title>Bloguito - Blog</title>    
+	<link rel="stylesheet" type="text/css" href="Styles.css">
+   </head>
+
+<body onload="userName()">
+    <div class="nav">
+        <nav>
+            <div>EL<strong>BLOGUITO</strong>®</div>
+            <ul>
+                <li id="userName" style="padding:0.5vw 2vw ;"><i class="fas fa-user-circle"></i></li>
+                <li class="success"><a class="a" href="#1" class="link">Crear</a></li>
+                <li class="fail"><a class="a" href="#" class="link" onclick="salir()">Salir</a></li>
+            </ul>
+        </nav>
+        <hr>
+    </div>
+
+    <div class="container" id="blog" style="justify-content: flex-start;"></div>
+    
+    <div id="1" class="container" style="background-color: var(--dark);">
+        <div style="background: var(--c1); padding: 0 20vw 3.25vw 20vw; border-radius: 5px; /*border: solid  var(--c2) 1px;*/">
+            <div id="register">
+                <div id="error"></div>
+                <h1 style="font-size: var(--h1);">COMENTA ALGO...</h1>
+                <div id="createUser">
+                    <p>Titulo</p><input id="title" placeholder="Escribe un título aquí..." type="text" rows="1">
+                    <p>Contenido</p><textarea id="text" placeholder='Escribe tu "Bloguito" aquí...' rows="10" cols="100"></textarea>
+                </div>
+                <div class="button" style="display: inline-flex; justify-content: center; margin: 10px 0; width: calc(80vw - var(--padding));" onclick=" createContent()">Crear Bloguito</div>
+            </div>
+        </div>
+    </div>
+    <div>
+        <footer>
+            <div>
+                <h4 style="font-weight: 1;">El<strong>Bloguito</strong>Team®</h4>
+            </div>
+            <div style="display: inline-flex; justify-content: flex-end; min-width: 50px; width: 25%;">
+                <i style="padding: 0 10px;" class="fab fa-facebook-square"></i>
+                <i style="padding: 0 10px;" class="fab fa-twitter"></i>
+                <i style="padding: 0 10px;" class="fab fa-instagram"></i>
+            </div>
+        </footer>
+    </div>
+
+	<script src="script.js"></script>
+</body>
+
+</html>
