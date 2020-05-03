@@ -1,0 +1,340 @@
+ /* -----------------------------------------------------------------------General-----------------------------------------------------------------------------*/
+ :root {
+    --radius: 2px;
+    --padding: 4vw;
+    --nav: 1em;
+    --navpdd: 2vw;
+    --h1: 2em;
+    --nhb: 4em;
+    --btntype:2em;
+    --c1: white;
+    --c2: #007bff;
+    --dark: rgba(0, 0, 0, 0.2);
+    --success: #04e762;
+    --error: #fe4a49;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Quicksand', sans-serif;
+    transition: all 300ms ease-in-out;
+}
+h3{
+    font-weight: 1; 
+    font-size: 1.5em;
+}
+/*---------------------------------------------------------------------Barra de Navegación--------------------------------------------------------------------*/
+.nav {
+    position: sticky;
+    top: 0;
+    color: var(--c2);
+}
+
+.nav>nav {
+    overflow: hidden;
+    background: white;
+    display: flex;
+    height: 50px;
+    padding: 20px var(--padding);
+    ;
+    justify-content: space-between;
+    align-items: center;
+}
+
+ul {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+li {
+    list-style-type: none;
+}
+
+li :hover {
+    background: var(--c2);
+    color: white;
+    list-style-type: none;
+    border-radius: 2px;
+    transition: all 300ms ease-in-out;
+}
+
+a {
+    text-decoration: none;
+    font-size: var(--nav);
+}
+
+.a {
+    color: var(--c2);
+    text-decoration: none;
+    font-size: var(--nav);
+    padding: 0.5vw var(--navpdd);
+}
+
+.success :hover { /*Blog.html*/
+    background: var(--success);
+    color: white;
+}
+
+.fail :hover {/*Blog.html*/
+    background: var(--error);
+    color: white;
+}
+
+hr {
+    display: block;
+    border: none;
+    /*margin: 0 4vw;*/
+    height: 1px;
+    background: var(--c2);
+    height: 1px;
+}
+
+ /*----------------------------------------------------------------------Contenedor General-----------------------------------------------------------------*/
+ .container {
+    display: flex;
+    overflow: hidden;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    min-height: calc(70vh);
+    padding: var(--padding);
+}
+
+.container:nth-child(even) {
+    color: var(--c1);
+    background: var(--c2);
+}
+
+.container:nth-child(odd) {
+    color: var(--c2);
+    background: var(--c1);
+}
+ /*----------------------------------------------------------------------Crear Usuario-----------------------------------------------------------------*/
+
+ .errorMsg {
+    display: inline-flex;
+    flex-grow: 1;
+    height: 50px;
+    padding: 0 10px;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    background: var(--error);
+}
+
+#register{
+    display: flex; 
+    width: calc(60vw - var(--padding)); 
+    flex-wrap: wrap;
+}
+
+#register>h1{
+    display: block; 
+    color: var(--c2); 
+    text-align: left; 
+    font-weight: 1; 
+    margin: 10px; 
+    padding: 0;
+}
+
+#error{
+    display: inline-flex; 
+    border-radius: 2px; 
+    align-items: center; 
+    flex-grow: 1; 
+    margin: 15px; 
+    width: calc(60vw - var(--padding)); 
+    height: 40px; 
+    overflow: hidden;
+}
+
+#createUser{
+    display: flex; 
+    justify-content: flex-start; 
+    flex-wrap: wrap; 
+    width: calc(100vw - var(--padding));
+    height: auto; 
+    background: var(--c2);   
+    border-radius: 5px; 
+    overflow: hidden; 
+    padding: 2vw;
+}
+
+#createUser>p{
+    display: inline-flex; 
+    color: var(--c1); 
+    width: 150px; 
+    margin: 5px 0; 
+    flex-grow: 1;
+}
+
+#createUser>input{
+    display: inline-flex; 
+    flex-grow: 4;
+    width: 70%; 
+    margin: 5px 0; 
+    padding: 5px; 
+    color: var(--c2); 
+    border-width: 0; 
+    border-radius: calc(var(--radius)/2); 
+    font-family: 'Quicksand', sans-serif; 
+    min-width: 100px;
+}
+
+.button {
+    display: inline-flex; 
+    justify-content: center; 
+    margin: 10px 0; 
+    width: calc(80vw - var(--padding));
+    border: solid var(--success) 1px;
+    border-radius: 5px;
+    padding: 5px var(--padding);
+    color: var(--success);
+    background: var(--c1);
+    font-size: var(--btntype);
+    user-select: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    
+}
+
+.button:hover {
+    color: var(--c1);
+    background: var(--success);
+    transition: all 300ms ease-in-out;
+}
+
+
+/*----------------------------------------------------------------------Quienes Somos-----------------------------------------------------------------*/
+
+.secondColumnBlock {
+    display: inline-block;
+    width: calc(50vw - 8vw);
+}
+
+.twoColumnImage {
+    min-width: calc(500px);
+    height: calc(400px);
+}
+
+footer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    color: var(--c1);
+    background: var(--dark);
+    padding: 20px 4vw;
+    height: 100px;
+}
+
+.title {
+    width: 100vw;
+    margin-top: -2vw;
+    margin-bottom: 2vw;
+    padding-left: 16.8vw;
+}
+
+.card {
+    width: 250px;
+    margin: 0 2vw;
+    padding: 20px;
+    color: var(--c1);
+    background: var(--c2);
+}
+
+.card>div>p {
+    margin: 10px 0;
+}
+/*-----------------------------------------------------------------------Post-------------------------------------------------------------------*/
+#blog {
+    background: var(--dark);
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    grid-auto-rows: 200px;
+    min-height: 60vh;
+    align-items: flex-start;
+    align-content: flex-start;
+}
+#text{
+    display: inline-flex; 
+    flex-grow: 4;
+    width: 70%; 
+    margin: 5px 0; 
+    resize: none; 
+    border-radius: calc(var(--radius)/2); 
+    padding: 5px; color: var(--c2); 
+    font-family: 'Quicksand', sans-serif;
+}
+
+.post {
+    display: inline-block;
+    border-radius: var(--radius);
+    overflow: hidden;
+}
+
+.post>div>p {
+    word-break: break-all;
+    padding: 10px;
+    color: var(--c2);
+    background: var(--c1);
+}
+
+.post>div>h4 {
+    padding: 10px;
+    color: var(--c1);
+    background: var(--c2);
+    word-break: break-all;
+}
+/*----------------------------------------------------------------------Media Query-----------------------------------------------------------------*/
+
+@media screen and (max-width: 1388px) {
+    .card {
+        margin: 2vw;
+    }
+
+    .title {
+        text-align: center;
+        padding: 0;
+    }
+}
+
+@media screen and (max-width: 1025px) {
+
+    .twoColumnImage {
+        order: -1;
+    }
+}
+
+@media screen and (max-width: 834px) {
+    :root {
+        --nav: 0.7em;
+        --navpdd: 1vw;
+        --h1: 1em;
+        --nhb: 2em;   
+        --btntype:1em;    
+    }
+    .container {
+        align-content: center;
+    }
+
+    .secondColumnImage {
+        order: -1;
+        min-width: calc(100vw - 8vw);
+        min-height: calc(70vw - 8vw);
+    }
+
+    .secondColumnBlock {
+        min-width: calc(100vw - 8vw);
+        min-height: calc(50vw - 8vw);
+    }
+
+    .card {
+        margin: 2vw;
+    }
+}
