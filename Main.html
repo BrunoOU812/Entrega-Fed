@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
+        integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/74fc1e9d11.js" crossorigin="anonymous"></script><!--objetct fit buscar respecto a la imagen cubra el objeto donde esta-->
+    <title>Bloguito - Pagina Principal</title>
+	<link rel="stylesheet" type="text/css" href="Styles.css">
+   </head>
+
+<!---------------------------------------------------------------------------Navigation Bar-------------------------------------------------------------------->
+
+<body>
+    <div class="nav">
+        <nav>
+            <div>EL<strong>BLOGUITO</strong>®</div>
+            <ul>
+                <li><a class="a" href="#1" class="link">Registrarse</a></li>
+                <li><a class="a" href="#2" class="link">Quienes Somos</a></li>
+                <li><a class="a" href="#3" class="link">Nuestro Equipo</a></li>
+            </ul>
+        </nav>
+
+        <hr>
+    </div>
+    <!------------------------------------------------------------------------Registrarse--------------------------------------------------------------------->
+    <div id="1" class="container" style="background-color: var(--dark);">
+        <div style="background: var(--c1); padding: 0 20vw 3.25vw 20vw; border-radius: 5px; /*border: solid  var(--c2) 1px;*/">
+            <div id="register">
+                <div id="error"></div>
+                <h1 style="font-size: var(--h1);">CREAR USUARIO...</h1>
+                <div id="createUser">
+                    <p>Usuario</p><input id="user" placeholder="Usuario" type="text" rows="1">
+                    <p>Contraseña</p><input id="password" placeholder="Contraseña" type="password" rows="1">
+                    <p>Repetir Contraseña</p><input id="repeatPassword" placeholder="Repetir Contraseña" type="password" rows="1">
+                    <!--<p>Email</p><input id="eMail" placeholder="User@Email.com" type="email" rows="1">-->
+                </div>
+                <div class="button" style="display: inline-flex; justify-content: center; margin: 10px 0; width: calc(80vw - var(--padding));" onclick="register()">
+                    Registrarse
+                </div>
+            </div>
+        </div>
+    </div>
+    <!------------------------------------------------------------------------Quienes Somos--------------------------------------------------------------------->
+    <div id="2" class="container overflow">
+        <div class="secondColumnBlock" style="padding: 1vw;">
+            <h1 style="margin: 1vw 0;font-weight: 1;">Quienes somos.</h1>
+            <p>En la empresa "El Bloguito",
+                estamos constantemente iterando, resolviendo problemas y trabajando juntos para conectar a personas
+                de todo el mundo. Por eso es importante que nuestra fuerza laboral refleje la diversidad de las
+                personas a las que servimos. Contratar personas con diferentes antecedentes y puntos de vista nos
+                ayuda a tomar mejores decisiones, crear mejores productos y crear mejores experiencias para todos.
+            </p>
+        </div>
+        <div class="twoColumnImage"
+            style="background: url('Peopleworking.png'); background-position: center; background-size: contain; background-repeat: no-repeat;">
+        </div>
+    </div>
+    <!-----------------------------------------------------------------------------NHB--------------------------------------------------------------------------->
+    <div class="container">
+        <h1 style="font-weight: 1; font-size: var(--nhb);">Nosotros Hacemos Bloguito</h1>
+    </div>
+    <!------------------------------------------------------------------------Nuestro Equipo--------------------------------------------------------------------->
+    <div id="3" class="container" style=" align-items: flex-start; ">
+        <h1 class="title" style="font-weight: 1;">Nuestro Equipo</h1>
+        <div class="card">
+            <img class="image"
+                style="background: url('CEO2.png'); background-size: contain; background-repeat: no-repeat; width: 250px; min-height: 166px; margin:-20px -20px 20px -20px;">
+            <div>
+                <h3>Gerente en Casitodo</h3>
+                <p>"Todos se preocupan por el trabajo que están haciendo. Todos queremos ayudar a nuestra comunidad a
+                    tener las experiencias más seguras y positivas posibles."
+                </p>
+                <small>Marta Castaglanieta</small>
+            </div>
+        </div>
+        <div class="card">
+            <img
+                style="background: url('CEO.png'); background-size: contain; background-repeat: no-repeat; width: 250px; min-height: 166px; margin:-20px -20px 20px -20px;">
+            <div>
+                <h3>Modelo de Manos Pro</h3>
+                <p>"En la orientación, le dicen: "Esta es su empresa ahora". Esas palabras están literalmente pintadas
+                    en las paredes. Es algo bastante sorprendente: desde el primer día, tu voz es importante."
+                </p>
+                <small>Evaristo Fingerwood</small>
+            </div>
+        </div>
+        <div class="card">
+            <img
+                style="background: url('CEO3.png'); background-size: contain; background-repeat: no-repeat; width: 250px; min-height: 166px; margin:-20px -20px 20px -20px;">
+            <div>
+                <h3>Ejecutora de Buenos Remates</h3>
+                <p>"Nada en ElBloguito es problema de otra persona. Si se arremanga, a veces puede causar un impacto
+                    donde tal vez no haya pensado que podría hacerlo."
+                </p>
+                <small>Carolina Gomezpinola</small>
+            </div>
+        </div>
+    </div>
+    <!----------------------------------------------------------------------------Footer----------------------------------------------------------------------------->
+    <div>
+        <footer>
+            <div>
+                <h4 style="font-weight: 1;">El<strong>Bloguito</strong>Team®</h4>
+            </div>
+            <div style="display: inline-flex; justify-content: flex-end; min-width: 50px; width: 25%;">
+                <i style="padding: 0 10px;" class="fab fa-facebook-square"></i>
+                <i style="padding: 0 10px;" class="fab fa-twitter"></i>
+                <i style="padding: 0 10px;" class="fab fa-instagram"></i>
+            </div>
+        </footer>
+    </div>
+    <!----------------------------------------------------------------------------Script----------------------------------------------------------------------------->
+    <script src="script.js"></script>
+</body>
+
+</html>
